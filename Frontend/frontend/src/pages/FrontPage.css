@@ -1,0 +1,100 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.buttons .btn {
+  padding: 12px 24px;
+  margin: 0 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #2AB7CA; /* Teal */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: #2AB7CA;
+    border: 2px solid #2AB7CA;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #189ab4; /* Deeper teal on hover */
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline:hover {
+    background-color: #189ab4;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+
+/* Hero Section Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .buttons .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,143 @@
+.payroll-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title-payroll {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.payroll-table th,
+.payroll-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.payroll-table th {
+  background-color: #34495e;
+  color: white;
+}
+
+.payroll-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.payroll-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.search-bar {
+  width: 300px; /* Set a fixed width */
+  padding: 8px;
+  margin: 20px auto; /* This will center the search bar horizontally */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  display: block;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .payroll-container {
+    padding: 15px;
+  }
+
+  .title-payroll {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    width: 250px; /* Adjust search bar width */
+  }
+
+  .payroll-table th, .payroll-table td {
+    padding: 10px; /* Smaller padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .payroll-container {
+    padding: 10px;
+  }
+
+  .title-payroll {
+    font-size: 1.2rem; /* Make the title smaller on very small screens */
+  }
+
+  .search-bar {
+    width: 200px; /* Make search bar even smaller */
+  }
+
+  .payroll-table th, .payroll-table td {
+    padding: 8px; /* Reduce padding */
+  }
+}
+/* General pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .pagination button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 5px 3px; /* Reduce space between buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination button {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 4px 2px;
+  }
+
+  .pagination {
+    flex-direction: column; /* Stack pagination buttons vertically */
+  }
+}
