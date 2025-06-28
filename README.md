@@ -1,8 +1,8 @@
-# Employee Management System (EMS)
+ Employee Management System (EMS)
 A MERN stack (MongoDB, Express, React, Node.js) application that helps manage employee data with CRUD operations, payroll management, and user-friendly dashboards.
 
 
-## 🚀 Features
+# Features
 
 - Add, Edit, Delete Employee Records
 - View All Employees
@@ -12,7 +12,7 @@ A MERN stack (MongoDB, Express, React, Node.js) application that helps manage em
 - Backend API with Express.js
 - MongoDB for Data Storage
 
-## 🛠️ Tech Stack
+#  Tech Stack
 
 - React.js (Frontend)
 - Node.js & Express.js (Backend)
