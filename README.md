@@ -1,4 +1,4 @@
- Employee Management System (EMS)
+# Employee Management System (EMS)
 A MERN stack (MongoDB, Express, React, Node.js) application that helps manage employee data with CRUD operations, payroll management, and user-friendly dashboards.
 
 
