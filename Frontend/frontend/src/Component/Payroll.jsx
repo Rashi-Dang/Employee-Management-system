@@ -12,7 +12,8 @@ const Payroll = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/v1/payroll")
+      // .get("http://localhost:4000/api/v1/payroll")
+      .get(`${import.meta.env.VITE_URL}/payroll`)
       .then((res) => {
         setPayrollData(res.data);
         setLoading(false);
